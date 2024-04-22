@@ -3,13 +3,15 @@
     --color-text: #2a2b2a;
     --background-color: rgb(255, 255, 255);
     --background-shadow: rgb(113, 113, 112, 0.7);
-    --body-color: #1daf1d;
-    --popup-white: #ffffff;
-    --popup-color: #2a2b2a;
+    --body-color: #2a2b2a;
+    --popup-white: #2b6e08;
+    --popup-color: #ffffff;
     --num-color: #2a2b2a;
     --num-shadow:rgb(113, 113, 112, 0.7);
     --backgroundButton-color: #2b6e08;
-    --backgroundButton-colorhover: #0102ef;
+    --backgroundButton-colorhover: #57011e;
+    --color-black: #57011e;
+    --color-red: rgba(7, 7, 7, 0.5);
 
 }
 body {
@@ -74,7 +76,7 @@ p {
 }
 
 #main-student-info-container :nth-child(1){
-    font-size: 28px;
+    font-size: 25px;
 }
 
 #img-container {

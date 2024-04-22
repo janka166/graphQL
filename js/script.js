@@ -326,7 +326,7 @@ function generateMain(user) {
     studentAuditsCont.setAttribute("id", "audit-container");
 
     const AuditRatioLb = document.createElement("p");
-    AuditRatioLb.innerHTML = `Audits ratio`;
+    AuditRatioLb.innerHTML = `Audits score`;
 
     const userAuditRatio = document.createElement("p");
 
@@ -334,11 +334,11 @@ function generateMain(user) {
 
     auditR > 0.4
         ? (userAuditRatio.innerHTML = `${auditR} Almost perfect!`)
-        : (userAuditRatio.innerHTML = `${auditR} You are careful buddy.`);
+        : (userAuditRatio.innerHTML = `${auditR} It's almost ...`);
 
     auditR > 0.4
-        ? (userAuditRatio.style.color = "var(--color-pink)")
-        : (userAuditRatio.style.color = "var(--color-blue)");
+        ? (userAuditRatio.style.color = "var(--color-red)")
+        : (userAuditRatio.style.color = "var(--color-black)");
 
     const auditGraphCont = document.createElement("div");
     auditGraphCont.style.width = "100%";
