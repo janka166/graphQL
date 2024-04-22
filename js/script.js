@@ -194,7 +194,7 @@ function generateMain(user) {
     }
 
     const styleFile = document.head.getElementsByTagName("link")[0];
-    styleFile.href = "./css/loginMenu.css";
+    styleFile.href = "./css/indexStyle.css";
 
     const xps = user.transactions.filter(
         (element) =>
