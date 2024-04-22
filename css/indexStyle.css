@@ -1,0 +1,255 @@
+:root {
+    --index-font: Tahoma, Arial, Helvetica, sans-serif;
+    --color-text: #2a2b2a;
+    --background-color: rgb(255, 255, 255);
+    --background-shadow: rgb(113, 113, 112, 0.7);
+    --body-color: #2a2b2a;
+    --popup-white: #ffffff;
+    --popup-color: #2a2b2a;
+    --num-color: #2a2b2a;
+    --num-shadow:rgb(113, 113, 112, 0.7);
+    --backgroundButton-color: #2b6e08;
+    --backgroundButton-colorhover: #0102ef;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #2a2b2a;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 10px 40px;
+}
+
+.student-info {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 15px;
+    width: 100%;
+    box-shadow: 0 5px 20px var(--background-color);
+    font-size: 20px;
+}
+
+.chart-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.chart-container {
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 150px;
+    max-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.lb {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+#container {
+    margin: 25px 50px;
+}
+
+.student-info-containers {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-student-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-student-info-container :nth-child(1){
+    font-size: 30px;
+}
+
+#img-container {
+    height: 60px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+#main-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#first-row {
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#userbasic{
+    display: flex;
+    flex-direction: row;
+}
+
+#second-row {
+    min-height: 400px;
+    max-height: 410px
+}
+
+#level-container {
+    min-width: 200px;
+    max-width: 215px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 20px;
+    background-color: var(--popup-color);
+    color: var(--popup-white);
+}
+
+#level-num-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--popup-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--num-color);
+    box-shadow: 0 5px 20px var(--num-shadow);
+    margin: 15px;
+}
+
+#xp-container {
+    max-height: 400px;
+}
+
+#chart {
+    padding: 60px 20px;
+    padding-top: 0;
+}
+
+#audit-chart {
+    margin: 0 40px;
+}
+
+#third-row {
+    min-height: 320px;
+    max-height: 400px;
+}
+
+#audit-container {
+    max-width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.button {
+    border-style: none;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;;
+    width: 150px;
+    text-transform: uppercase;
+    margin: 0 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: var(--backgroundButton-color);
+    color: var(--background-color);
+}
+
+.button:hover {
+    background-color: var(--backgroundButton-colorhover);
+    color: var(--background-color);
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+
+.graph-container {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1220px) {
+    #third-row {
+        flex-direction: column;
+        box-sizing: border-box;
+        width: auto;
+        max-height: fit-content;
+    }
+
+    #audit-container {
+        max-width: 100%;
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #first-row{
+        height: auto;
+    }
+
+    .button {
+        margin: 15px 0;
+    }
+
+    #userbasic{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img-container{
+        height: 150px;
+    }
+
+    #main-student-info-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #main-info-container {
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    #second-row {
+        flex-direction: column;
+        box-sizing: border-box;
+        max-height: fit-content;
+    }
+
+    .student-info {
+        width: auto;
+    }
+
+    #main-student-info-container,
+    #level-container {
+        max-width: 100%;
+    }
+
+    span {
+        text-align: center;
+    }
+}
