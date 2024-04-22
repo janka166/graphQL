@@ -3,7 +3,7 @@
     --color-text: #2a2b2a;
     --background-color: rgb(255, 255, 255);
     --background-shadow: rgb(113, 113, 112, 0.7);
-    --body-color: #2a2b2a;
+    --body-color: #1daf1d;
     --popup-white: #ffffff;
     --popup-color: #2a2b2a;
     --num-color: #2a2b2a;
@@ -74,7 +74,7 @@ p {
 }
 
 #main-student-info-container :nth-child(1){
-    font-size: 30px;
+    font-size: 28px;
 }
 
 #img-container {
