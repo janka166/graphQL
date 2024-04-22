@@ -12,7 +12,7 @@ function generateLogin() {
 
     // Update the stylesheet
     const styleFile = document.head.getElementsByTagName("link")[0];
-    styleFile.href = "../css/styles.css";
+    styleFile.href = "./css/loginMenu.css";
     // Create the container element
     const insideLogin = document.createElement("insideLogin");
     insideLogin.className = "insideLogin";
@@ -194,7 +194,7 @@ function generateMain(user) {
     }
 
     const styleFile = document.head.getElementsByTagName("link")[0];
-    styleFile.href = "../css/styles.css";
+    styleFile.href = "./css/loginMenu.css";
 
     const xps = user.transactions.filter(
         (element) =>
